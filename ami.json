@@ -3,7 +3,7 @@
         "aws_access_key": "***REMOVED***",
         "aws_secret_key": "***REMOVED***",
         "aws_region": "us-west-2",
-        "subnet_id": "subnet-ba2296c2",
+        "subnet_id": "subnet-07d669d725661f50d",
         "source_ami": "ami-0928f4202481dfdf6",
         "ssh_username": "ubuntu"
     },
@@ -38,7 +38,9 @@
             "inline": [
                 "sleep 30",
                 "sudo apt-get update",
-                "sudo apt-get install nginx -y"
+                "sudo apt-get install nginx -y",
+                "sudo apt-get install nodejs -y",
+                "sudo apt-get install npm -y"
             ]
         }
     ]

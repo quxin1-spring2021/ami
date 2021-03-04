@@ -3,7 +3,7 @@
         "aws_access_key": "***REMOVED***",
         "aws_secret_key": "***REMOVED***",
         "aws_region": "us-west-2",
-        "subnet_id": "subnet-07d669d725661f50d",
+        "subnet_id": "subnet-6ff32225",
         "source_ami": "ami-0928f4202481dfdf6",
         "ssh_username": "ubuntu"
     },
@@ -19,6 +19,7 @@
             "ssh_username": "{{user `ssh_username`}}",
             "ami_name": "csye6225_{{timestamp}}",
             "ami_description": "Ubuntu AMI for CSYE 6225",
+            "ami_users": ["798539279327"],
             "launch_block_device_mappings": [
                 {
                     "device_name": "/dev/sda1",
@@ -40,7 +41,8 @@
                 "sudo apt-get update",
                 "sudo apt-get install nginx -y",
                 "sudo apt-get install nodejs -y",
-                "sudo apt-get install npm -y"
+                "sudo apt-get install npm -y",
+                "sudo apt-get install unzip"
             ]
         }
     ]

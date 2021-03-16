@@ -49,7 +49,7 @@
                 "sudo chmod +x ./install",
                 "sudo ./install auto > /tmp/logfile",
                 "sudo service codedeploy-agent status",
-                "sudo echo what is this"
+                "sudo echo the test"
             ]
         }
     ]

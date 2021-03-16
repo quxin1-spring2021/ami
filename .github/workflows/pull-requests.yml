@@ -30,8 +30,8 @@ jobs:
             target: ami.json
           env:
             PACKER_LOG: 1 # enable debug log for packer
-            PKR_VAR_aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-            PKR_VAR_aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         
       # build artifact
         - name: Build Artifact

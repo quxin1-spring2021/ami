@@ -3,8 +3,8 @@
         "aws_region": "us-west-2",
         "subnet_id": "subnet-6ff32225",
         "source_ami": "ami-0928f4202481dfdf6",
-        "aws_access_key": "AKIA6FJVRRELAVIUJXQ5",
-        "aws_secret_key": "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",
+        "aws_access_key": "{{env `aws_access_key`}}",
+        "aws_secret_key": "{{env `aws_secret_key`}}",
         "ssh_username": "ubuntu"
     },
     "builders": [
@@ -42,15 +42,15 @@
                 "sudo apt-get install nginx -y",
                 "sudo apt-get install nodejs -y",
                 "sudo apt-get install npm -y",
-                "sudo apt-get install unzip",
-                "sudo apt install ruby-full",
-                "sudo apt install wget",
+                "sudo apt-get install unzip -y",
+                "sudo apt install ruby-full -y",
+                "sudo apt install wget -y",
                 "cd /home/ubuntu",
                 "wget https://aws-codedeploy-us-west-2.s3.us-west-2.amazonaws.com/latest/install",
                 "sudo chmod +x ./install",
                 "sudo ./install auto > /tmp/logfile",
                 "sudo service codedeploy-agent status",
-                "sudo echo the test"
+                "sudo echo the demo7"
             ]
         }
     ]

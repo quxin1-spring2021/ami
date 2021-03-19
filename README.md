@@ -1,4 +1,4 @@
-# AMI
+# AMI - demopr
 Repository for AMI
 
 ## Instructions for using packer.

@@ -1,7 +1,5 @@
 # AMI
 
-This is for demo.
-
 Repository for AMI
 
 ## Instructions for using packer.

@@ -18,7 +18,7 @@
             "source_ami": "{{user `source_ami`}}",
             "ssh_username": "{{user `ssh_username`}}",
             "ami_name": "csye6225_{{timestamp}}",
-            "ami_description": "Ubuntu AMI for CSYE 6225",
+            "ami_description": "Ubuntu AMI for CSYE 6225, EC2 Instance, CloudWatch, CodeDeploy",
             "ami_users": ["798539279327"],
             "launch_block_device_mappings": [
                 {
@@ -50,7 +50,8 @@
                 "sudo chmod +x ./install",
                 "sudo ./install auto > /tmp/logfile",
                 "sudo service codedeploy-agent status",
-                "sudo echo Build Finished"
+                "sudo echo Build Finished",
+                "wget https://s3.amazonaws.com/amazoncloudwatch-agent/linux/amd64/latest/AmazonCloudWatchAgent.zip -O AmazonCloudWatchAgent.zip && unzip -o AmazonCloudWatchAgent.zip && sudo ./install.sh"
             ]
         }
     ]

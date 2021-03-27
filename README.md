@@ -1,4 +1,4 @@
-# AMI
+# AMI - Demo
 
 Repository for AMI
 
